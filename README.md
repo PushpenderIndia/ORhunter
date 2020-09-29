@@ -70,6 +70,72 @@ THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. YOU MAY USE THIS
 | -l URL_LIST | --list URL_LIST | URLs List, ex:- google_urls.txt |
 | -d DOMAIN   | --domain DOMAIN | Target Domain Name, ex:- google.com |
 
+## How To Use in Linux
+```bash
+# Navigate to the /opt directory (optional)
+$ cd /opt/
+
+# Clone this repository
+$ git clone https://github.com/PushpenderIndia/ORhunter.git
+
+# Navigate to ORhunter folder
+$ cd ORhunter
+
+# Installing dependencies
+$ apt-get update && apt-get install python3-pip
+$ pip3 install numpy requests
+
+# Giving Executable Permission
+$ chmod +x orhunter.py
+
+# Checking Help Menu
+$ python3 orhunter.py --help
+
+# Normal (Fast) URL Crawl + Testing GET based open redirect
+$ python3 orhunter.py -d target.com 
+
+# Normal (Fast) URL Crawl + Testing GET based open redirect + Include Subdomain's URLs
+$ python3 orhunter.py -d target.com -s
+
+# Normal (Fast) URL Crawl + Testing GET based open redirect + Include Subdomain's URLs + Save Result
+$ python3 orhunter.py -d target.com -s -o result.txt
+
+# Run Deep Crawl + Saving Result + Include Subdomain's URLs + Change Thread Number
+$ python3 orhunter.py -d target.com -o result.txt -s --deepcrawl --thread 100
+```
+
+## How To Use in Windows
+```bash
+# Install dependencies 
+$ Install latest python 3.x from Official Site (https://www.python.org/downloads/)
+
+# Clone this repository or Download Zip File
+$ git clone https://github.com/PushpenderIndia/ORhunter.git
+
+# Navigate to ORhunter folder
+$ cd ORhunter
+
+# Installing dependencies
+$ python -m pip install numpy requests
+
+# Checking Help Menu
+$ python orhunter.py --help
+
+# Checking Help Menu
+$ python orhunter.py --help
+
+# Normal (Fast) URL Crawl + Testing GET based open redirect
+$ python orhunter.py -d target.com 
+
+# Normal (Fast) URL Crawl + Testing GET based open redirect + Include Subdomain's URLs
+$ python orhunter.py -d target.com -s
+
+# Normal (Fast) URL Crawl + Testing GET based open redirect + Include Subdomain's URLs + Save Result
+$ python orhunter.py -d target.com -s -o result.txt
+
+# Run Deep Crawl + Saving Result + Include Subdomain's URLs + Change Thread Number
+$ python orhunter.py -d target.com -o result.txt -s --deepcrawl --thread 100
+```
 
 ## Contribute
 
