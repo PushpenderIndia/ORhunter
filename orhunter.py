@@ -311,8 +311,9 @@ if __name__ == '__main__':
     # Scanning targets using OpenRedirectScanner class
     scan = OpenRedirectScanner(final_url_list, arguments.thread, arguments.domain)
     vulnerable_urls = scan.start()
-    for a in vulnerable_urls:
-        print(a)
+    print("\n=========================================================================")
+    for urls in vulnerable_urls:
+        print(urls)
     print("\n[>>] [Total Confirmed URLs] : ", len(vulnerable_urls))
         
     if arguments.output:
