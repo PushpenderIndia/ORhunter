@@ -137,6 +137,10 @@ $ python orhunter.py -d target.com -s -o result.txt
 $ python orhunter.py -d target.com -o result.txt -s --deepcrawl --thread 100
 ```
 
+## Screenshot
+
+![](/Result.JPG)
+
 ## Contribute
 
 * All Contributors are welcome, this repo needs contributors who will improve this tool to make it best.
