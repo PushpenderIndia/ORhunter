@@ -278,8 +278,8 @@ class OpenRedirectScanner:
         for url in url_list:
             try:
                 r = requests.get(str(url), allow_redirects=False, verify=False)
-                if r.status_code in [301, 302]:
-                    if ("evil.com" in r.headers["Location"]) and (domainNameOfTarget not in r.headers["Location"]):
+                if r.status_code in [301, 302, 303, 304, 305, 306, 307, 308]:
+                    if ("evil.com" in r.headers["Location"]) and ("=http://evil.com" not in r.headers["Location"]) and (domainNameOfTarget not in r.headers["Location"]):
                         self.vulnerable_urls.append(url)
             except:
                 self.total_error_encountered += 1
