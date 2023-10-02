@@ -144,9 +144,3 @@ $ python orhunter.py -d target.com -o result.txt -s --deepcrawl --thread 100
 ## Contribute
 
 * All Contributors are welcome, this repo needs contributors who will improve this tool to make it best.
-
-## Contact
-
-singhpushpender250@gmail.com 
-
-## More Features Coming Soon...
